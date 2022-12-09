@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;600;700&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Noto Sans, sans-serif;
+}
+
+/* Nav bar & inner classes */
+
+.nav-bar {
+  display: flex;
+  height: 80px;
+  z-index: 10;
+}
+
+.left-div {
+  width: 50%;
+  height: 100%;
+}
+
+.left-div img {
+  height: 65%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.right-div {
+  width: 50%;
+  display: flex;
+  align-content: flex-end;
+}
+
+.apiBtn{
+  width: 100px;
+  height: 100%;
+  border: none;
+  font-family: Noto Sans, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.logoMobile{
+  height: 50px;
+  display: none;
+  width: 100%;
+  background-color: white;
+}
+
+.mLogo{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.drDownForBtns{
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.mLogo img{
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.drDownForBtns img{
+  height: 80%;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.drpDownMobile{
+  display: none;
+}
+
+/* Drop down buttons in nav bar */
+
+.drp-btn {
+  margin-right: 0px;
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.btn-a {
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+}
+
+.drp-content {
+  display: none;
+  list-style: none;
+  background-color: #4c78aa; 
+  width: 230px;
+  height: 230px;
+  padding-top: 30px;
+  transition-duration: 1s;
+}
+
+.drp-content li a {
+  text-decoration: none;
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+  color:  white;
+}
+
+.drp-content li{
+  width: 210px;
+  margin: auto;
+  margin-left: 20px;
+}
+
+.drp-btn:hover .drp-content{
+  display: block;
+  transform: translate(0%);
+  z-index: 2;
+}
+
+
+.snBtn:hover, .apiBtn:hover, .drp-btn button:hover{
+  cursor: pointer;
+}
+
+/* Second Nav Bar Css */
+.nav-bar-second {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(224, 224, 224);
+  display: flex;
+}
+
+.snfirst {
+  width: 50%;
+  height: 100%;
+}
+
+.snsection {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.snBtn {
+  margin-right: 0px;
+  width: 100px;
+  height: 100%;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+/* Dealing with image section */
+.backimg {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mainBIC{
+  width: 100%;
+  height: 500px;
+}
+
+.mainBII{
+  width: 100%;
+  height: 500px;
+}
+
+.mainBII img{
+  width: 100%;
+  height: 100%;
+  transition-duration: 3s;
+}
+
+#firstImg{
+  display: block;
+}
+
+#secondImg{
+  display: none;
+}
+
+#thirdImg{
+  display: none;
+}
+
+.trBlack{
+  background-color: rgb(39, 39, 39,0.5);
+  color: white;
+  font-family: Noto Sans, sans-serif;
+}
+
+.child{
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.trLeftBlack{
+  width: 50%;
+  height: 100%;
+}
+
+.trLeftBlack p{
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.trLeftBlack h1{
+  margin-left: 35px;
+  margin-top: 60px;
+  font-size: 40px;
+}
+
+#bkLearnMore{
+  margin-left: 35px;
+  margin-top: 20px;
+  border: 3px solid white;
+  background-color: transparent;
+  border-radius: 30px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+#bkLearnMore:hover{
+  background-color: white;
+  color: rgb(15, 15, 15);
+}
+
+.trRightBlack{
+  width: 50%;
+  height: 100%;
+}
+
+.logodiv{
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  display: flex;
+}
+
+.logodiv div{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.logodiv div img{
+  margin-top: 50px;
+  width: 80%;
+  transition-duration: 0.5s;
+}
+
+.logodiv div img:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Text section after image */
+.hyerworks {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 60px;
+  font-family: Noto Sans;
+  color: rgb(63, 63, 63);
+}
+
+.hyerworks img {
+  margin-top: 20px;
+  width: 40%;
+}
+
+.insPara {
+  font-size: larger;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Next section buisness benefits list */
+.buisBenefits {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid black;
+  color: rgb(63, 63, 63);
+}
+
+.bbImage {
+  width: 50%;
+  height: 100%;
+}
+
+.bbImage img {
+  width: 100%;
+}
+
+.bbList {
+  width: 50%;
+  height: 100%;
+}
+
+.bbList h2 {
+  margin-left: 30px;
+  margin-top: 40px;
+  font-family: Noto Sans;
+  font-size: 40px;
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+}
+
+.bbList div {
+  display: flex;
+  width: 80%;
+  margin-left: 30px;
+  height: auto;
+  font-family: Noto Sans;
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.bbList div img {
+  width: 100px;
+}
+
+.bbList div p {
+  margin-left: 20px;
+}
+
+.bbHyerImg{
+  display: none;
+}
+
+.schBtn {
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid rgb(63, 63, 63);
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: larger;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+  transition-duration: 0.3s;
+}
+
+.schBtn:hover {
+  background-color: violet;
+  color: white;
+  border-color: violet;
+}
+
+/* Next section tasker benefits class */
+
+.taskerBenefits {
+  display: flex;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.taskerList {
+  width: 50%;
+}
+
+.tbHyerImg{
+  display: none;
+}
+
+.taskerList h2 {
+  margin-left: 30px;
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: Noto Sans;
+  color: white;
+}
+
+.taskerList div {
+  margin-left: 30px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.taskerList div p {
+  margin-left: 30px;
+  font-family: Noto Sans;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.lmBtn {
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid white;
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 180px;
+  height: 50px;
+  margin-bottom: 30px;
+  font-size: larger;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+  transition-duration: 0.3s;
+}
+
+.lmBtn:hover {
+  background-color: skyblue;
+  color: white;
+  border-color: white;
+}
+
+.taskerImage {
+  width: 50%;
+}
+
+.taskerImage img {
+  width: 100%;
+}
+/* Classes for next section play-apple-store */
+.downlHyer {
+  width: 100%;
+  text-align: center;
+  font-family: Noto Sans;
+}
+
+.downlHyer h3 {
+  font-size: 30px;
+  color: rgb(63, 63, 63);
+  margin-top: 40px;
+  font-weight: 900;
+}
+
+.paStore {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.playStoreLogo {
+  margin-right: 30px;
+  transition-duration: 0.5s;
+}
+
+.playStoreLogo:hover,
+.googlePlayStore:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.googlePlayStore {
+  margin-left: 30px;
+  transition-duration: 0.5s;
+}
+
+/* Second bkimg section */
+.secondBcImg {
+  width: 100%;
+  height: 300px;
+  background-image: url("https://gohyer.com/wp-content/uploads/2020/08/Background@2x-scaled.jpg");
+  background-position: center left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Noto Sans;
+  color: white;
+  text-align: center;
+}
+
+.sbOutDiv{
+  width: 100%;
+  height: 100%;
+}
+
+.sbInDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sbDetail {
+  width: 20%;
+  height: 80%;
+  margin-top: 6%;
+}
+
+.sbDetail h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.sbDetail p {
+  font-size: 20px;
+}
+
+.flD {
+  margin-left: 10%;
+}
+
+/* Classes for amazing partners section */
+.amPart {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 60px;
+  font-family: Noto Sans;
+  color: rgb(63, 63, 63);
+  margin-bottom: 30px;
+}
+
+.amPart img {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.scrolLogo {
+  width: 100%;
+  display: flex;
+}
+
+.scrLogos {
+  width: 250px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.scrLogos img {
+  width: 100%;
+}
+
+/* Classes for people are talking section */
+.paTalking {
+  font-family: Noto Sans;
+  text-align: center;
+  font-size: 20px;
+  background-image: url("https://gohyer.com/wp-content/uploads/2020/07/bg_testimonials.jpg");
+  height: 400px;
+  margin-bottom: 70px;
+  padding-top: 50px;
+}
+
+.paTalking img {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.paOuterDiv {
+  width: 1200px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.innerFlexDiv {
+  min-width: auto;
+  height: 100%;
+  display: inline-flex;
+}
+
+.patItem {
+  height: 250px;
+  width: 1200px;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+  font-family: Noto Sans;
+  color: rgb(24, 24, 24);
+  font-size: 23px;
+}
+
+/* Classes for hyer image */
+.hyerImage {
+  width: 100%;
+  text-align: center;
+  height: 500px;
+}
+
+.hyerImage img {
+  width: 40%;
+}
+
+/* Classes for logo list */
+.justForEx {
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.holdItems {
+  height: 100%;
+  min-width: auto;
+  display: inline-flex;
+}
+
+.transition {
+  transition-duration: 6s;
+}
+
+.secondJItem {
+  width: 250px;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.secondJItem img {
+  width: 80%;
+  margin-top: 50px;
+}
+
+/* Class for footer section */
+.homFooter{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(216, 242, 252);
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.footerDiv{
+  width: 100%;
+  height: 70%;
+  display: block;
+  font-family: Noto Sans,sans-serif;
+}
+
+.footerDiv h4{
+  color: rgb(59, 59, 59);
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.footerDiv div a{
+  text-decoration: none;
+  font-family: Noto Sans, sans-serif;
+  font-weight: 400;
+  color: rgb(59, 59, 59);
+}
+
+.footerDiv div{
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.fLogo{
+  margin-top: 25px;
+  width: 80%;
+  transition-duration: 0.5s;
+}
+.fLogo img{
+  width: 100%;
+}
+
+.fLogo:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Some common classes */
+.lmauto {
+  margin-left: auto;
+}
+
+.tr4{
+    transition-duration: 4s;
+}
+
+/* All for tesing purpose */
+
+.testImage{
+  object-fit: cover;
+}
+
+
+/* Setting classes for mobile devices */
+
+@media (max-width: 770px){
+  
+  /* Changing second navigation bar */
+  .allNav{
+    display: none;
+  }
+
+  .drpDownMobile{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 150px;
+    height:400px;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+  }
+
+  .drp-btn{
+    height: 50px;
+  }
+  
+  .drpDownMobile div, .drpDownMobile button{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 5px;
+  }
+  
+  /* Nav bar for top */
+  .logoMobile{
+    display: flex;
+  }
+
+  /* Changing main background image */
+  .backimg{
+    height: 250px;
+  }
+
+  .mainBIC{
+    width: 100%;
+    height: 250px;
+  }
+
+  .mainBII{
+    min-width: auto;
+    height: 250px;
+  }
+
+  .trBlack{
+    height: 250px;
+    top: 80px;
+  }
+
+  .trLeftBlack{
+    width: 100%;
+    text-align: center;
+  }
+
+  .trLeftBlack h1{
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .trLeftBlack p{
+    margin: 0px;
+    font-size: 15px;
+  }
+
+  .trRightBlack{
+    display: none;
+  }
+
+  #bkLearnMore{
+    margin: 0px;
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .logodiv{
+    margin-top: 5px;
+  }
+
+  .logodiv div img{
+    margin-top: 10px;
+  }
+
+  /* class for next text section "how hyer works" */
+  .hyerworks{
+    padding-top: 0px;
+    color: rgb(90, 90, 90);
+  }
+
+  .hyerworks h1{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .insPara{
+    margin: 15px 15px 30px 15px;
+    font-weight: 400;
+  }
+
+  /* Classes for buisness benefits */
+  .bbImage{
+    position: absolute;
+    width: 100%;
+    top: 790px;
+  }
+
+  .bbList h2{
+    color: rgb(90,90,90);
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  .buisBenefits{
+    display: block;
+  }
+
+  .bbList{
+    width: 100%;
+    text-align: center;
+  }
+
+  .bbList div{
+    display: block;
+    text-align: center;
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .bbList div p{
+    margin: 0%;
+    margin-top: 10px;
+  }
+
+  #firstBBD{
+    margin-top: 380px;
+  }
+
+  .bbHyerImg{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .schBtn{
+    margin: 40px 0px 30px 0px;
+  }
+
+  /* Tasker benefits */
+  .taskerBenefits{
+    display: block;
+  }
+
+  .taskerList{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .taskerList h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+  }
+
+  .taskerList div{
+    width: 100%;
+    margin: 0px;
+    display: block;
+    text-align: center;
+  }
+
+  .taskerList div img{
+    margin: 0%;
+    margin-top: 10px;
+  }
+
+  .taskerList div p{
+    margin: 10px 5px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tbHyerImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  .taskerImage{
+    position: absolute;
+    top: 2020px;
+    width: 100%;
+  }
+
+  #firstTBD{
+    margin-top: 350px;
+  }
+
+  .lmBtn{
+    margin: 20px 0px 30px 0px;
+  }
+
+  /* Classes for download hyer */
+  .paStore{
+    display: flex;
+  }
+
+  .downlHyer h3{
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .paStore img{
+    width: 40%;
+  }
+
+  .playStoreLogo{
+    margin: auto;
+  }
+
+  .googlePlayStore{
+    margin: auto;
+  }
+
+  /* Class for people are talking class */
+  .paTalking{
+    width: 100%;
+    height: 450px;
+  }
+
+  .paTalking img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paTalking h2{
+    color: rgb(90,90, 90);
+    font-weight: 400;
+  }
+
+  .paOuterDiv{
+    width: 350px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .patItem{
+    font-size: 20px;
+    width: 350px;
+    height: 160px;
+  }
+
+  /* Classes for Next section second background section */
+
+  .secondBcImg{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sbOutDiv{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sbInDiv{
+    min-width: auto;
+    height: 100%;
+    display: inline-flex;
+  }
+
+  .sbDetail{
+    width: 350px;
+    height: 300px;
+    margin: 0px;
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 50px;
+  }
+
+  /* Class for amazing partnners */
+
+  .amPart{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+
+  .amPart h1{
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .amPart img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .justForEx{
+    width: 350px;
+    height: 200px;
+  }
+
+  .holdItems{
+    min-width: auto;
+    height: 200px;
+  }
+
+  .secondJItem{
+    width: 175px;
+    height: 200px;
+  }
+
+  .secondJItem img{
+    width: 100%;
+  }
+}

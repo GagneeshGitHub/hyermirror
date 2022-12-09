@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./indexcss.css" />
+    <title>Hyer Mirror</title>
+  </head>
+  <body onload="callOtherFunction()">
+    <div class="mAndDeskNav">
+      <div class="logoMobile">
+        <div class="mLogo"><img src="./media/logo.png" alt="" /></div>
+        <div class="drDownForBtns" onclick="displayDrpdown()">
+          <img src="./media/menu.png" onclick="imageCalled()" alt="" />
+        </div>
+      </div>
+      <div id="drpDownMobile" class="drpDownMobile">
+        <div class="drp-btn lmauto">
+          <button id="findWorkBtn" class="btn-a">Find Work</button>
+          <div class="drp-content">
+            <li><a href="#">Become a Tasker</a></li>
+            <li><a href="#">Shop Swag</a></li>
+            <li><a href="#">Perks & Discounts</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Bagde Library</a></li>
+          </div>
+        </div>
+        <div class="drp-btn">
+          <button class="btn-a">Hire Help</button>
+          <div class="drp-content">
+            <li><a href="#">Hire Help</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Tasker Map</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Recent News</a></li>
+          </div>
+        </div>
+        <button class="apiBtn">API</button>
+        <div class="drp-btn lmauto">
+          <button class="btn-a">About</button>
+          <div class="drp-content">
+            <li><a href="#">Become a Tasker</a></li>
+            <li><a href="#">Shop Swag</a></li>
+            <li><a href="#">Perks & Discounts</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Bagde Library</a></li>
+          </div>
+        </div>
+        <div class="drp-btn">
+          <button class="btn-a">Community</button>
+          <div class="drp-content">
+            <li><a href="#">Become a Tasker</a></li>
+            <li><a href="#">Shop Swag</a></li>
+            <li><a href="#">Perks & Discounts</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Bagde Library</a></li>
+          </div>
+        </div>
+        <div class="drp-btn">
+          <button class="btn-a">Media</button>
+          <div class="drp-content">
+            <li><a href="#">Become a Tasker</a></li>
+            <li><a href="#">Shop Swag</a></li>
+            <li><a href="#">Perks & Discounts</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Bagde Library</a></li>
+          </div>
+        </div>
+        <button class="snBtn">Blog</button>
+        <button class="snBtn">Contact</button>
+      </div>
+      <div class="allNav">
+        <div class="nav-bar">
+          <div class="left-div">
+            <img src="./media/logo.png" alt="Logo not loaded yet!" />
+          </div>
+          <div class="right-div">
+            <div class="drp-btn lmauto">
+              <button id="findWorkBtn" class="btn-a">Find Work</button>
+              <div class="drp-content">
+                <li><a href="#">Become a Tasker</a></li>
+                <li><a href="#">Shop Swag</a></li>
+                <li><a href="#">Perks & Discounts</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Bagde Library</a></li>
+              </div>
+            </div>
+            <div class="drp-btn">
+              <button class="btn-a">Hire Help</button>
+              <div class="drp-content">
+                <li><a href="#">Hire Help</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Tasker Map</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Recent News</a></li>
+              </div>
+            </div>
+            <button class="apiBtn">API</button>
+          </div>
+        </div>
+        <div class="nav-bar-second">
+          <div class="snfirst"></div>
+          <div class="snsection">
+            <div class="drp-btn lmauto">
+              <button class="btn-a">About</button>
+              <div class="drp-content">
+                <li><a href="#">Become a Tasker</a></li>
+                <li><a href="#">Shop Swag</a></li>
+                <li><a href="#">Perks & Discounts</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Bagde Library</a></li>
+              </div>
+            </div>
+            <div class="drp-btn">
+              <button class="btn-a">Community</button>
+              <div class="drp-content">
+                <li><a href="#">Become a Tasker</a></li>
+                <li><a href="#">Shop Swag</a></li>
+                <li><a href="#">Perks & Discounts</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Bagde Library</a></li>
+              </div>
+            </div>
+            <div class="drp-btn">
+              <button class="btn-a">Media</button>
+              <div class="drp-content">
+                <li><a href="#">Become a Tasker</a></li>
+                <li><a href="#">Shop Swag</a></li>
+                <li><a href="#">Perks & Discounts</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Bagde Library</a></li>
+              </div>
+            </div>
+            <button class="snBtn">Blog</button>
+            <button class="snBtn">Contact</button>
+          </div>
+          <!-- All the dropDown and other absolute element -->
+        </div>
+      </div>
+    </div>
+
+    <div id="backimg" class="backimg">
+      <div class="child">
+        <div class="mainBII">
+          <img
+            id="firstImg"
+            class="biItem"
+            src="https://gohyer.com/wp-content/uploads/2020/08/img_slider_1-1.jpg"
+            alt=""
+          />
+
+          <img
+            id="secondImg"
+            class="biItem"
+            src="https://gohyer.com/wp-content/uploads/2022/02/hero-1-1.jpg"
+            alt=""
+          />
+
+          <img
+            id="thirdImg"
+            class="biItem"
+            src="https://gohyer.com/wp-content/uploads/2020/09/slider2alt2b-scaled.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="child trBlack">
+        <div class="trLeftBlack">
+          <h1>Live the Good Life</h1>
+          <p>Tasks that fit your skill, your schedule, your life</p>
+          <button id="bkLearnMore">Learn More</button>
+          <div class="logodiv">
+            <div>
+              <img
+                src="https://gohyer.com/wp-content/uploads/2020/07/App-Store-Badge.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                src="https://gohyer.com/wp-content/uploads/2020/07/PlayStoreBadge.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="trRightBlack"></div>
+      </div>
+    </div>
+    <div class="hyerworks">
+      <h1>How Hyer Works</h1>
+      <img
+        src="https://gohyer.com/wp-content/uploads/2020/08/line.png"
+        alt="No image yet"
+      />
+      <p class="insPara">
+        Hyer is a simple, straightforward app that connects businesses to
+        on-demand labor and individuals to immediate work in real-time. It’s a
+        two-way street that works for everyone. For a better way to work—and a
+        better way to live.
+      </p>
+    </div>
+    <div class="buisBenefits">
+      <div class="bbImage">
+        <img
+          id="bbImg"
+          src="https://gohyer.com/wp-content/uploads/2022/02/benefits-1.jpg"
+          alt="No image to show yet"
+        />
+      </div>
+      <div class="bbList">
+        <h2>Buisness Benefits</h2>
+        <img
+          class="bbHyerImg"
+          src="https://gohyer.com/wp-content/uploads/2020/08/line.png"
+          alt="No image yet"
+        />
+        <div id="firstBBD">
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Oval.svg"
+            alt=""
+          />
+          <p>
+            Get qualified Taskers within minutes and scale your workforce on
+            demand.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Oval-Copy-7.svg"
+            alt=""
+          />
+          <p>
+            Rely on easy and intelligent technology to respond to workforce
+            demands in real time.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Welcome-3-Static.svg"
+            alt=""
+          />
+          <p>
+            Gain greater control over the tasks required to run an efficient,
+            engaged business.
+          </p>
+        </div>
+        <button class="schBtn">Schedule Demo</button>
+      </div>
+    </div>
+
+    <!-- Tasker Benefits -->
+    <div class="taskerBenefits">
+      <div class="taskerList">
+        <h2>Tasker Benefits</h2>
+        <img
+          class="tbHyerImg"
+          src="https://gohyer.com/wp-content/uploads/2020/08/Hyer-Divider.png"
+          alt="No image yet"
+        />
+        <div id="firstTBD">
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Tasker_Active_Find-Work-1.svg"
+            alt=""
+          />
+          <p>
+            Get qualified Taskers within minutes and scale your workforce on
+            demand.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Tasker_Active_Calendar.svg"
+            alt=""
+          />
+          <p>
+            Rely on easy and intelligent technology to respond to workforce
+            demands in real time.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/09/Tasker_Active_Rate-Experience.svg"
+            alt=""
+          />
+          <p>
+            Gain greater control over the tasks required to run an efficient,
+            engaged business.
+          </p>
+        </div>
+        <button class="lmBtn">Learn More</button>
+      </div>
+      <div class="taskerImage">
+        <img
+          src="https://gohyer.com/wp-content/uploads/2020/08/tasker-img-1.jpg"
+          alt="No image yet"
+        />
+      </div>
+    </div>
+    <div class="downlHyer">
+      <h3>Download Hyer Today!</h3>
+      <div class="paStore">
+        <img
+          class="playStoreLogo"
+          src="https://gohyer.com/wp-content/uploads/2020/07/App-Store-Badge.png"
+          alt="Image not found"
+        />
+        <img
+          class="googlePlayStore"
+          src="https://gohyer.com/wp-content/uploads/2020/07/PlayStoreBadge.png"
+          alt="Image not found"
+        />
+      </div>
+    </div>
+    <section class="secondBcImg">
+      <div class="sbOutDiv">
+        <div class="sbInDiv">
+          <div class="sbDetail flD">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/icon-1.png"
+              alt=""
+            />
+            <h2>280,000</h2>
+            <p>Happy Taskers</p>
+          </div>
+          <div class="sbDetail">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/icon-2.png"
+              alt=""
+            />
+            <h2>27</h2>
+            <p>States Served</p>
+          </div>
+          <div class="sbDetail">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/icon-3.png"
+              alt=""
+            />
+            <h2>2,200,000</h2>
+            <p>Hours Worked</p>
+          </div>
+          <div class="sbDetail">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/icon-4.png"
+              alt=""
+            />
+            <h2>364,000</h2>
+            <p>Taks Completed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="amPart">
+      <h1>Amazing Partners</h1>
+      <img
+        src="https://gohyer.com/wp-content/uploads/2020/08/line.png"
+        alt="No image yet"
+      />
+      <div id="jfxOuterDiv" class="justForEx">
+        <div class="holdItems">
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/Serv-U-Success.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/Meijer_logo.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2020/07/pepsi.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2022/09/marriott1-e1663348930523.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2022/09/Doordash-Logo-grey.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2022/09/Acosta_Logo@2x-e1662999389476-1.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2022/09/compass-group-logo-e1663093935496-1.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2021/03/sparkling-ice-logo-sparkling-ice-logo-png-transparent-2.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2021/03/driveline-logo-grey.png"
+              alt=""
+            />
+          </div>
+          <div class="secondJItem carouItem transition">
+            <img
+              src="https://gohyer.com/wp-content/uploads/2022/09/hyatt-hotels-logo-grey.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="paTalking">
+      <h2 class="paTalkHead">People Are Talking</h2>
+      <img
+        src="https://gohyer.com/wp-content/uploads/2020/07/line-black.png"
+        alt="No image yet"
+      />
+      <div id="paOD" class="paOuterDiv">
+        <div class="innerFlexDiv">
+          <div class="patItem tr4">
+            <p>
+              “Typically, it takes two weeks for us to fill a position. After
+              posting our first task on the Hyer app, we had an applicant within
+              minutes—I literally danced in the hallway. Excited to put Hyer to
+              work for us!”
+            </p>
+          </div>
+          <div class="patItem tr4">
+            <p>
+              “I like the flexibility involved with the Hyer app. It's helped me
+              and my family tremendously this year throughout COVID-19. Making
+              extra money when we <br />
+              need it—it’s easy to work around my family’s schedule.”
+            </p>
+          </div>
+          <div class="patItem tr4">
+            <p>
+              “Where we have implemented, Hyer and the Hyer Taskers are doing a
+              remarkable job.<br />
+              The rate on requested jobs is well over 99%. The Hyer team has
+              been a great partner—a blessing as we manage our way through these
+              unusual times.”
+            </p>
+          </div>
+          <div class="patItem tr4">
+            <p>
+              “Hyer was so helpful when other employees could not come to work.
+              During a very busy Christmas season we were able to seamlessly
+              keep delivering where normally we would have run into many
+              obstacles."
+            </p>
+          </div>
+          <div class="patItem tr4">
+            <p>
+              “This app is easy to use. I have been with Hyer since they
+              launched and it’s been a pleasure working under them! I LOVE the
+              new updates! The jobs are easy if you don’t mind working. The
+              customer service crew are nice and friendly when I call in. If you
+              need extra cash this the company to work for.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hyerImage">
+      <img
+        src="https://gohyer.com/wp-content/uploads/2020/08/Hyer-Life-1.png"
+        alt=""
+      />
+    </div>
+
+    <footer class="homFooter">
+      <div class="footerDiv">
+        <h4>Hyer</h4>
+        <div><a href="#">Our Story</a></div>
+        <div><a href="#">Leadership Team</a></div>
+        <div><a href="#">Media</a></div>
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">Careers</a></div>
+        <div><a href="#">Contact</a></div>
+      </div>
+      <div class="footerDiv">
+        <h4>Get Started</h4>
+        <div><a href="#">Find Work</a></div>
+        <div><a href="#">Hire Help</a></div>
+      </div>
+      <div class="footerDiv">
+        <h4>Community</h4>
+        <div><a href="#">Diverstity & Inclusion</a></div>
+      </div>
+      <div class="footerDiv">
+        <h4>Get the app</h4>
+        <div class="fLogo">
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/07/App-Store-Badge.png"
+            alt=""
+          />
+        </div>
+        <div class="fLogo">
+          <img
+            src="https://gohyer.com/wp-content/uploads/2020/07/PlayStoreBadge.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="footerDiv">
+        <h4>Don't Miss a Thing</h4>
+        <div>Join our Newsletter for updates, offers, and more.</div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Getting Logos and setting var
+    var carItems = document.getElementsByClassName("carouItem");
+    var nLength = carItems.length;
+    var noIteration = nLength - 3;
+    var mul;
+    var drpBoolen = false;
+
+    function callOtherFunction() {
+      moveItems();
+      movePaItems();
+      moveMainBI();
+      if (screen.width < 700) {
+        moveSBID();
+      }
+    }
+
+    // Displaying drop down menu
+    function displayDrpdown() {
+      let item = document.getElementById("drpDownMobile");
+      if (!drpBoolen) {
+        item.style.display = "flex";
+        drpBoolen = true
+      }
+      else {
+        item.style.display = "none"
+        drpBoolen = false
+      }
+    }
+
+    // Check if dropdown image is called
+    function imageCalled() {
+      console.log("Image is called");
+    }
+
+    async function moveItems() {
+      if ((noIteration = nLength && screen.width < 600)) {
+        noIteration = nLength - 1;
+      }
+      let i = nLength - 1;
+      if (mul === noIteration) {
+        for (i; i >= 0; i--) {
+          carItems[i].style.transform = "translateX(0%)";
+        }
+        mul = 1;
+        return;
+      }
+
+      if (mul === undefined) {
+        mul = 1;
+      }
+      // console.log("Move Item Function Is Called");
+      for (i; i >= 0; i--) {
+        // console.log("We are inside the transform");
+        carItems[i].style.transform = `translateX(-${mul * 100}%)`;
+      }
+      mul++;
+    }
+
+    // Getting the second bc img items
+    var sbItems = document.getElementsByClassName("sbDetail");
+    var sbILength = sbItems.length;
+    var sbMul;
+
+    async function moveSBID() {
+      if (sbMul === sbILength) {
+        sbMul = 1;
+        for (let i = 1; i < sbILength; i++) {
+          sbItems[i].style.transform = "translateX(0%)";
+        }
+        return;
+      }
+
+      if (sbMul === undefined) {
+        sbMul = 1;
+      }
+
+      for (let i = sbILength - 1; i >= 0; i--) {
+        sbItems[i].style.transform = `translateX(-${sbMul * 100}%)`;
+      }
+
+      sbMul++;
+      console.log("SBMUL is called");
+    }
+
+    // Getting patItems and setting var
+    var patItems = document.getElementsByClassName("patItem");
+    var pLength = patItems.length;
+    var pmul;
+
+    async function movePaItems() {
+      // console.log("Move pa function is called");
+      if (pmul === pLength) {
+        pmul = 1;
+        for (let i = 0; i < pLength; i++) {
+          patItems[i].style.transform = "translateX(0%)";
+        }
+        return;
+      }
+      if (pmul === undefined) {
+        pmul = 1;
+      }
+
+      for (let i = pLength - 1; i >= 0; i--) {
+        patItems[i].style.transform = `translateX(-${pmul * 100}%)`;
+      }
+      pmul++;
+    }
+
+    // Setting slideshow for main first background image
+    var bkImges = document.getElementsByClassName("biItem");
+    var setImg = 1;
+
+    async function moveMainBI() {
+      if (bkImges === undefined) {
+        bkImges = document.getElementsByClassName("biItem");
+        // console.log("Var is not yet declared so we are returning");
+        return;
+      }
+      // console.log("We are inside the main BI function");
+
+      if (setImg === 1) {
+        bkImges[1].style.display = "block";
+        bkImges[0].style.display = "none";
+      } else if (setImg === 2) {
+        bkImges[2].style.display = "block";
+        bkImges[1].style.display = "none";
+      } else if (setImg === 3) {
+        setImg = 0;
+        bkImges[0].style.display = "block";
+        bkImges[2].style.display = "none";
+      }
+      setImg++;
+      setTimeout(moveMainBI, 8000);
+    }
+
+    // Listener for repeating the transition
+    carItems[1].addEventListener("webkitTransitionEnd", (event) => {
+      // console.log("Transition is ended");
+      setTimeout(moveItems, 2000);
+    });
+
+    patItems[0].addEventListener("webkitTransitionEnd", (event) => {
+      // console.log("Pa transition is ended");
+      setTimeout(movePaItems, 5000);
+    });
+
+    sbItems[1].addEventListener("webkitTransitionEnd", (event) => {
+      console.log("sbItem transition is ended");
+      setTimeout(moveSBID, 5000);
+    });
+  </script>
+</html>
